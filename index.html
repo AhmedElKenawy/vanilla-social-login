@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title> social login </title>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <div class="container">
+        <header class="header">
+        </header>
+        <div id="login" class="loginForm">
+            <h1 class="main-title"> Social login</h1>
+            <div class="facebook social-btn">
+                <fb:login-button size="large" scope="public_profile,email" onlogin="checkLoginState();">
+                    Login with Facebook
+                </fb:login-button>
+
+            </div>
+            <div class="social-btn google">
+                <div id="g_id_onload"
+                    data-client_id="1061372235312-jmbtff5rvd95s6if46og01ui679euqgq.apps.googleusercontent.com"
+                    data-context="signin" 
+                    data-ux_mode="popup"  
+                    data-callback="onGoogleLogin"
+                    data-auto_prompt="true"
+                    data-auto_select="true"
+                    >
+                </div>
+                <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+                    data-text="signin_with" data-size="medium" data-logo_alignment="left">
+                </div>
+
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <div id="home">
+            <div class="" id="login_status"></div>
+            <button onclick="logout()" class="logout">log out</button>
+        </div>
+    </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/index.js"> </script>
+</body>
+
+</html>

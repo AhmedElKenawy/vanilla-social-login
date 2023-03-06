@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #655A56;
+  background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 2 * 4vw);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 4vw auto;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.2);
+  display: grid;
+  grid-template-rows: 10rem minmax(100rem, auto);
+  grid-template-columns: 1.1fr 2fr 1.1fr;
+  grid-template-areas: "head head head""list recipe shopping";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:4rem;
+  width: 100%;
+}
+
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+}
+.main-title{
+  margin : 4rem auto;
+  color: #000000; 
+  font-size: 2rem !important;
+  text-align: center; 
+}
+.social-btn{
+  margin: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#home {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#login_status {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #F48982;
+}
+
+.logout {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #3d30ff;
+  border-radius: 14px;
+  border-color: #F48982;
+  border-width: 0;
+}
